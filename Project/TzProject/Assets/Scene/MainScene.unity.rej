@@ -1,0 +1,9 @@
+diff a/Project/TzProject/Assets/Scene/MainScene.unity b/Project/TzProject/Assets/Scene/MainScene.unity	(rejected hunks)
+@@ -155,7 +155,6 @@
+   m_PrefabInternal: {fileID: 0}
+   m_GameObject: {fileID: 4962030}
+   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+-  m_LocalScale: {x: 1, y: 1, z: 1}
+   m_LocalPosition: {x: -0.17, y: 1.43, z: 0.21}
+   m_LocalScale: {x: 3.4429486, y: 3.7887657, z: 1.2012783}
+   m_Children: []
