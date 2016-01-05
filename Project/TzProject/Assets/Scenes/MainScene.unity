@@ -361,3 +361,43 @@ MonoBehaviour:
   targetCamera: {fileID: 1647362787}
   Grid: {fileID: 21300000, guid: 4d21d75dd37bcc543a425a31c636e17e, type: 3}
   ActiveGrid: {fileID: 21300000, guid: 19ad2f41fc01c36458f1c8d4aa4615e6, type: 3}
+--- !u!1 &1696869497
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1696869499}
+  - 114: {fileID: 1696869498}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1696869498
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1696869497}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f62bd94b5e06b9e4fa629c6476a9926d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  res: 
+--- !u!4 &1696869499
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1696869497}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -16.1339397, y: -10.614707, z: 2.38047647}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
