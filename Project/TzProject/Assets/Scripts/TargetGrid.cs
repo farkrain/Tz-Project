@@ -14,13 +14,19 @@ public class TargetGrid : MonoBehaviour {
 			RaycastHit hit;
 			if (Physics.Raycast(ray, out hit, 1000))
 			{
-				obj = hit.collider.gameObject;
-				obj.GetComponent<SpriteRenderer>().sprite=ActiveGrid;
+					obj = hit.collider.gameObject;
+				if (obj.tag == "Grid") 
+				{
+					obj.GetComponent<SpriteRenderer> ().sprite = ActiveGrid;
+				}
 			}
 		}
 		if (Input.GetMouseButtonUp(0))
 		{
-			obj.GetComponent<SpriteRenderer>().sprite=Grid;
+			if (obj.tag == "Grid") 
+			{
+				obj.GetComponent<SpriteRenderer> ().sprite = Grid;
+			}
 		}
 	}
 }
