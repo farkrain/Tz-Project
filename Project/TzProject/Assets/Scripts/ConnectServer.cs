@@ -3,7 +3,6 @@ using System.Collections;
 using System.IO;
 using System.Net;
 using System.Net.Sockets;
-using Newtonsoft.Json;
 
 public class ConnectServer : MonoBehaviour 
 {

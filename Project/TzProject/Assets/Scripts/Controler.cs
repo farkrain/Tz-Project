@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class Controler : MonoBehaviour {
 	public Camera targetCamera;
@@ -8,9 +9,15 @@ public class Controler : MonoBehaviour {
 	float startX,startY,startZ;
 	float endX,endY,endZ;
 	float startTime;
-	// Update is called once per frame
-	void Update () {
-		targetCamera = Camera.main;
+    float speed;
+    // Update is called once per frame
+
+
+    void Update () {
+        speed = startTime;
+      //  speed = (Time.time - startTime)/5;
+
+        targetCamera = Camera.main;
 		if (Input.GetMouseButtonDown(0))
 		{
 			Ray ray = targetCamera.ScreenPointToRay(Input.mousePosition);
@@ -34,11 +41,14 @@ public class Controler : MonoBehaviour {
 		{
 			if (gameObject.GetComponent<Transform> ().position !=obj.GetComponent<Transform> ().position)
 			{
-				gameObject.GetComponent<Transform> ().position = new Vector3(Mathf.Lerp(startX,endX,(Time.time-startTime)/5),startY,Mathf.Lerp(startZ,endZ,(Time.time-startTime)/5));
+				gameObject.GetComponent<Transform> ().position = new Vector3(Mathf.Lerp(startX,endX,(speed)),startY,Mathf.Lerp(startZ,endZ,(speed)));
 			}
 			else{
 				move = false;
 			}
 		}
 	}
+
+
+
 }
