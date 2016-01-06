@@ -3,6 +3,9 @@ using System.Collections;
 using System.IO;
 using System.Net;
 using System.Net.Sockets;
+using System.Runtime.Serialization;
+using Newtonsoft.Json;
+
 public class ConnectServer : MonoBehaviour 
 {
 	public string res;
