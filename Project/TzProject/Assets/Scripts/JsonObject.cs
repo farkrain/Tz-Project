@@ -4,8 +4,16 @@ using System.Collections.Generic;
 using Newtonsoft.Json;
 
 public class JsonObject {
+	public List<Message> message { get; set; }
 }
-public class Coordinates2
+
+public class CoordinatesMove
+{
+	public int x { get; set; }
+	public int y { get; set; }
+}
+
+public class CoordinatesTarget
 {
 	public int x { get; set; }
 	public int y { get; set; }
@@ -14,17 +22,12 @@ public class Coordinates2
 public class Target
 {
 	public string type { get; set; }
-	public Coordinates2 coordinates { get; set; }
-}
-public class Coordinates
-{
-	public int x { get; set; }
-	public int y { get; set; }
+	public CoordinatesTarget coordinates { get; set; }
 }
 
 public class Data
 {
-	public Coordinates coordinates { get; set; }
+	public CoordinatesMove coordinates { get; set; }
 	public string new_position { get; set; }
 	public Target target { get; set; }
 }
@@ -40,21 +43,23 @@ public class Turn
 	public List<Seq> seq { get; set; }
 }
 
-public class RootObject
+public class Message
 {
+	public string player { get; set; }
 	public string action { get; set; }
 	public Turn turn { get; set; }
 }
 
+
 public class ActionTurn
 {
-	public static string Serialize(RootObject data)
+	public static string Serialize(JsonObject data)
 	{
 		return JsonConvert.SerializeObject (data);
 	}
-	public static RootObject Deserialize(string data)
+	public static JsonObject Deserialize(string data)
 	{
-		return JsonConvert.DeserializeObject<RootObject> (data);
+		return JsonConvert.DeserializeObject<JsonObject> (data);
 	}
 }
 
