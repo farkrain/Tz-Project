@@ -10,6 +10,7 @@ public class ConnectServer : MonoBehaviour
 	void Start ()
 	{ 
 		ConnectClient();
+		DontDestroyOnLoad(gameObject.transform);
 	}
 	void ConnectClient()
 	{

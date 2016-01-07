@@ -25,7 +25,7 @@ public class Target
 	public CoordinatesTarget coordinates { get; set; }
 }
 
-public class Data
+public class Data2
 {
 	public CoordinatesMove coordinates { get; set; }
 	public string new_position { get; set; }
@@ -35,10 +35,10 @@ public class Data
 public class Seq
 {
 	public string action { get; set; }
-	public Data data { get; set; }
+	public Data1 data { get; set; }
 }
 
-public class Turn
+public class Data1
 {
 	public List<Seq> seq { get; set; }
 }
@@ -47,7 +47,7 @@ public class Message
 {
 	public string player { get; set; }
 	public string action { get; set; }
-	public Turn turn { get; set; }
+	public Data1 data { get; set; }
 }
 
 
