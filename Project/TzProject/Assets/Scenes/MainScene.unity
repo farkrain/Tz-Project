@@ -246,8 +246,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e95b9f63c9716e4eaacbdd60da16029, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerPrefabFirst: {fileID: 161112, guid: 7a4910b29f9f4fe4db23cf0591b9e5e1, type: 2}
-  playerPrefabSecond: {fileID: 121994, guid: ebe0b77ade4af7d43906f0231dea80e1, type: 2}
+  myPlayerPrefab: {fileID: 161112, guid: 7a4910b29f9f4fe4db23cf0591b9e5e1, type: 2}
+  anyPlayerPrefab: {fileID: 121994, guid: ebe0b77ade4af7d43906f0231dea80e1, type: 2}
+  npcPrefab: {fileID: 120014, guid: 13fcd8723a996bb448983fcb7339a733, type: 2}
 --- !u!1 &1647362783
 GameObject:
   m_ObjectHideFlags: 0

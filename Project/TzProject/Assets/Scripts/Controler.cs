@@ -18,7 +18,8 @@ public class Controler : MonoBehaviour {
 			if (Physics.Raycast(ray, out hit, 1000))
 			{
 				obj = hit.collider.gameObject;
-				if (!move)
+                gameObject.GetComponent<Transform>().position = obj.GetComponent<Transform>().position;
+/*				if (!move)
 				{
 				startTime= Time.time;
 				startX = gameObject.GetComponent<Transform> ().position.x;
@@ -27,10 +28,10 @@ public class Controler : MonoBehaviour {
 				endX = obj.GetComponent<Transform> ().position.x;
 				endZ = obj.GetComponent<Transform> ().position.z;
 				move = true;
-				}
+				}*/
 			}
 		}
-		if (move)
+	/*	if (move)
 		{
 			if (gameObject.GetComponent<Transform> ().position !=obj.GetComponent<Transform> ().position)
 			{
@@ -39,6 +40,6 @@ public class Controler : MonoBehaviour {
 			else{
 				move = false;
 			}
-		}
+		}*/
 	}
 }
